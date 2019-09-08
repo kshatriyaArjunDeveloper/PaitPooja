@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:clickable="true"
+    android:isScrollContainer="true"
+    tools:context=".Food_Item_Details_Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView_FoodItemImage_Details"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@android:color/holo_purple" />
+
+            <TextView
+                android:id="@+id/textView_FoodItemName_Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="#ff8a65  "
+                android:capitalize="characters"
+                android:fontFamily="@font/hinglish_italic"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:text="TextView"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/textView_FoodItemInfo_Details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/merriweather_light"
+                android:padding="8dp"
+                android:text="ALL \nTHE \nDETAILS"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

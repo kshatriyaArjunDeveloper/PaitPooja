@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/FoodItem_info_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light"
+    android:orientation="horizontal"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <ImageView
+        android:id="@+id/imageView_foodItemImage"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="4dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/FoodItem_info_textContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_foodItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:capitalize="characters"
+            android:fontFamily="@font/merriweather_light"
+            android:padding="4dp"
+            android:text="ITEM 1"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_foodItemInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/rubik"
+            android:padding="4dp"
+            android:text="INF0"
+            android:textColor="#62727b"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
